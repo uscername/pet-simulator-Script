@@ -1,0 +1,88 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+
+local w = library:CreateWindow("Pet simulator X") -- Creates the window
+
+local b = w:CreateFolder("PetsimXScripts") -- Creates the folder(U will put here your buttons,etc)
+
+local c = w:CreateFolder("By") -- Creates the folder(U will put here your buttons,etc)
+
+b:Label("Pet simulator X",{
+
+    TextSize = 20; -- Self Explaining
+
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+
+    
+
+}) 
+
+b:Button("Mangohub",function()
+
+    getgenv().WaterMark = false
+loadstring(game:HttpGet("https://gitlab.com/L1ZOT/mango-hub/-/raw/main/Mango-Bloxf-Fruits-Beta"))()
+
+end)
+
+b:Button("ThunderZ",function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Script"))()
+
+end)
+
+b:Button("Phantomhub",function()
+
+   local link, response = pcall(game.HttpGet, game, string.reverse'aul.niaM/ihcati/113vbuhretsam/lolytsed/moc.tnetnocresubuhtig.war//:sptth', true)
+if not link then return error("Failed to access raw") end
+local loads, err = coroutine.create(loadstring(response, '@desty#1821', '@GramxPersons#1111'))
+if not loads then return error('Failed to load response') end
+coroutine.resume(loads)
+
+end)
+
+b:Button("BlackTrap",function()
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/1"))()
+
+end)
+
+b:Button("Jmes",function()
+
+   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
+
+end)
+
+b:Button("Autocollect",function()
+
+   local orbs = game:GetService("Workspace")["__THINGS"].Orbs
+local lootbags = game:GetService("Workspace")["__THINGS"].Lootbags
+_G.start = true;
+while wait() and _G.start == true do
+    for _,orb in pairs(orbs:GetChildren()) do
+        orb.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame;
+        wait();
+    end    
+    for _,orb in pairs(lootbags:GetChildren()) do
+        orb.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame;
+        wait();
+    end
+end
+
+end)
+
+b:Button("Keyboard",function()
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
+end)
+
+c:Button("GhostUA",function()
+   
+end)
+
+c:Button("t.me/arceusXinfospdm",function()
+   
+end)
+
+c:DestroyGui()
